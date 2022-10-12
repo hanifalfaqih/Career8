@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
 
+
+    <ImageView
+        android:id="@+id/lowongan_boarding"
+        android:layout_width="302dp"
+        android:layout_height="318dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344"
+        app:srcCompat="@drawable/iv_onboarding_1" />
+
+    <TextView
+        android:id="@+id/lowongan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Lowongan"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lowongan_boarding" />
+
+    <TextView
+        android:id="@+id/pekerjaan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Pekerjaan"
+        android:textColor="@color/orange"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toEndOf="@+id/lowongan_text"
+        app:layout_constraintTop_toTopOf="@+id/lowongan_boarding" />
+
+    <TextView
+        android:id="@+id/penjelasan_boarding1"
+        android:layout_width="406dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Berbagai lowongan pekerjaan yang disediakan oleh Dunia Industri"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lowongan_boarding" />
 </androidx.constraintlayout.widget.ConstraintLayout>

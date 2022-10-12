@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 33
+    compileSdk 32
 
     defaultConfig {
         applicationId "id.allana.career8"
         minSdk 21
-        targetSdk 33
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
@@ -33,7 +33,7 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -48,7 +48,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     //json parser library
-    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'com.google.code.gson:gson:2.8.7'
     //coil image loader
     implementation 'io.coil-kt:coil:1.4.0'
     //view model and lifecycle stuffs
@@ -57,11 +57,8 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
     //hilt
     implementation("com.google.dagger:hilt-android:2.44")
-    annotationProcessor "com.google.dagger:hilt-android-compiler:2.44"
+    annotationProcessor "com.google.dagger:hilt-android-compiler:2.44.4"
 
     debugImplementation "com.github.chuckerteam.chucker:library:3.5.2"
     releaseImplementation "com.github.chuckerteam.chucker:library-no-op:3.5.2"
-
-    //app intro
-    implementation 'com.github.AppIntro:AppIntro:6.2.0'
 }
