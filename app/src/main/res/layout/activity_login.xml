@@ -34,17 +34,20 @@
         android:id="@+id/layout_login"
         android:layout_width="413dp"
         android:layout_height="368dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
         android:orientation="vertical"
         android:padding="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.955">
 
         <EditText
             android:id="@+id/email_input"
-            android:layout_width="316dp"
+            android:layout_width="320dp"
             android:layout_height="48dp"
             android:layout_margin="8dp"
             android:background="@drawable/layout_input"
@@ -54,7 +57,8 @@
 
         <EditText
             android:id="@+id/password_input"
-            android:layout_width="316dp"
+            android:layout_width="320dp"
+            android:inputType="textPassword"
             android:layout_height="48dp"
             android:layout_margin="8dp"
             android:background="@drawable/layout_input"
@@ -67,21 +71,22 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_gravity="right"
-            android:backgroundTint="@android:color/transparent"
             android:background="@android:color/transparent"
-            android:text="Lupa kata Sandi?"
+            android:backgroundTint="@android:color/transparent"
             android:fontFamily="@font/roboto_regular"
+            android:text="Lupa kata Sandi?"
             android:textAllCaps="false"
             android:textColor="@color/black"
-            android:textSize="12dp"/>
-      <Button
-          android:id="@+id/login_button"
-          android:layout_width="310dp"
-          android:layout_height="40dp"
-          android:layout_gravity="center"
-          android:backgroundTint="@color/blue"
-          android:text="Login"
-          android:fontFamily="@font/roboto_regular"/>
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="315dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Login" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -95,17 +100,18 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_medium"
                 android:text="New to logistic ?"
-                android:textSize="12dp"/>
+                android:textSize="12dp" />
+
             <Button
                 android:id="@+id/to_register_button"
                 android:layout_width="120dp"
                 android:layout_height="38dp"
                 android:backgroundTint="@color/white"
-                android:text="Register"
                 android:fontFamily="@font/roboto_regular"
+                android:text="Register"
                 android:textAllCaps="false"
-                android:textSize="14dp"
-                android:textColor="@color/blue"/>
+                android:textColor="@color/blue"
+                android:textSize="14dp" />
 
 
         </LinearLayout>
