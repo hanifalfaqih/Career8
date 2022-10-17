@@ -7,6 +7,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.github.appintro.AppIntro2
 import com.github.appintro.AppIntroCustomLayoutFragment
+import id.allana.career8.LoginActivity
 import id.allana.career8.R
 
 class IntroActivity: AppIntro2() {
@@ -30,11 +31,14 @@ class IntroActivity: AppIntro2() {
 
     override fun onDonePressed(currentFragment: Fragment?) {
         super.onDonePressed(currentFragment)
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+        finish()
 //        val intent = Intent(this, LoginActivity::class.java)
 //        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
 //        startActivity(intent)
 //        finish()
-        Toast.makeText(this, "onDone Pressed", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "OnDone Pressed", Toast.LENGTH_LONG).show()
     }
 
     private fun isFirstAppOpen() {

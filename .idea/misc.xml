@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/rafha/Career8/app/src/main/res/drawable/button_submit.xml" value="0.1785" />
         <entry key="..\:/rafha/Career8/app/src/main/res/drawable/gradient_background.xml" value="0.1785" />
         <entry key="..\:/rafha/Career8/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1785" />
+        <entry key="..\:/rafha/Career8/app/src/main/res/drawable/layout_email.xml" value="0.1785" />
         <entry key="..\:/rafha/Career8/app/src/main/res/layout/activity_intro.xml" value="0.1796875" />
+        <entry key="..\:/rafha/Career8/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/rafha/Career8/app/src/main/res/layout/layout_onboarding_1.xml" value="0.22" />
+        <entry key="..\:/rafha/Career8/app/src/main/res/layout/layout_onboarding_2.xml" value="0.1796875" />
+        <entry key="..\:/rafha/Career8/app/src/main/res/layout/layout_onboarding_3.xml" value="0.1796875" />
       </map>
     </option>
   </component>
