@@ -2,7 +2,6 @@ package id.allana.career8.onboarding
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.github.appintro.AppIntro2
@@ -34,11 +33,6 @@ class IntroActivity: AppIntro2() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
         finish()
-//        val intent = Intent(this, LoginActivity::class.java)
-//        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-//        startActivity(intent)
-//        finish()
-        Toast.makeText(this, "OnDone Pressed", Toast.LENGTH_LONG).show()
     }
 
     private fun isFirstAppOpen() {
