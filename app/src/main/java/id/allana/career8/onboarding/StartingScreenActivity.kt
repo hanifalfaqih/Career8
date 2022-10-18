@@ -1,7 +1,11 @@
 package id.allana.career8.onboarding
 
+import android.animation.AnimatorSet
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
 import id.allana.career8.R
@@ -9,6 +13,8 @@ import id.allana.career8.R
 class StartingScreenActivity : AppCompatActivity() {
 
     private lateinit var motionLayoutStartingScreen: MotionLayout
+    private lateinit var tvOne: TextView
+    private lateinit var tvSecond: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

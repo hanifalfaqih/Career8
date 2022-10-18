@@ -13,6 +13,8 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        supportActionBar?.hide()
+
         toRegisterBtn = findViewById(R.id.to_register_button)
         toRegisterBtn.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)

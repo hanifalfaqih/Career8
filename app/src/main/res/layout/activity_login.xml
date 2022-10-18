@@ -10,7 +10,6 @@
         android:id="@+id/login_image"
         android:layout_width="295dp"
         android:layout_height="290dp"
-        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,7 +35,6 @@
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_text">
 
@@ -47,7 +45,7 @@
             android:padding="16dp"
             android:background="@drawable/layout_input"
             android:fontFamily="@font/poppins_regular"
-            android:hint="Masukkan email atau nama pengguna"
+            android:hint="Masukkan email"
             android:textSize="16sp" />
 
         <EditText
@@ -65,8 +63,8 @@
         <Button
             android:id="@+id/lupa_password"
             android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
             android:background="@android:color/transparent"
             android:backgroundTint="@android:color/transparent"
             android:fontFamily="@font/poppins_regular"
@@ -95,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_regular"
                 android:text="New to Career8 ?"
-                android:textSize="12dp" />
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/to_register_button"
@@ -103,11 +101,10 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/poppins_regular"
-                android:paddingLeft="1dp"
                 android:text="Register"
                 android:textAllCaps="false"
                 android:textColor="@color/blue"
-                android:textSize="12dp" />
+                android:textSize="12sp" />
 
 
         </LinearLayout>

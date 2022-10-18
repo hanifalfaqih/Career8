@@ -12,12 +12,16 @@
         <entry key="..\:/rafha/Career8/app/src/main/res/layout/layout_onboarding_1.xml" value="0.22" />
         <entry key="..\:/rafha/Career8/app/src/main/res/layout/layout_onboarding_2.xml" value="0.1796875" />
         <entry key="..\:/rafha/Career8/app/src/main/res/layout/layout_onboarding_3.xml" value="0.1796875" />
+        <entry key="app/src/main/res/drawable/bg_swipe_up.xml" value="0.229" />
+        <entry key="app/src/main/res/drawable/button_submit.xml" value="0.229" />
         <entry key="app/src/main/res/drawable/gradient_background.xml" value="0.229" />
         <entry key="app/src/main/res/drawable/half_circle.xml" value="0.229" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.4" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.2966485507246377" />
-        <entry key="app/src/main/res/layout/activity_starting_screen.xml" value="0.2966485507246377" />
+        <entry key="app/src/main/res/layout/activity_starting_screen.xml" value="0.176" />
         <entry key="app/src/main/res/layout/layout_onboarding_1.xml" value="0.2966485507246377" />
+        <entry key="app/src/main/res/layout/layout_onboarding_2.xml" value="0.2966485507246377" />
+        <entry key="app/src/main/res/layout/layout_onboarding_3.xml" value="0.2966485507246377" />
       </map>
     </option>
   </component>
