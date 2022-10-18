@@ -2,5 +2,6 @@
     <string name="app_name">Career8</string>
     <string name="title_onboarding_2">Kemudahan <font color="#FF672C">Akses</font></string>
     <string name="title_onboarding_3">Sesuaikan <font color="#FF672C">Jurusanmu</font></string>
+    <string name="text_welcome_to">WELCOME <font color="#FF672C">TO</font></string>
 
 </resources>
