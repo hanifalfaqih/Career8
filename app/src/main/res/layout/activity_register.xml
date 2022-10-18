@@ -16,74 +16,62 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/iv_register_page" />
 
-    <TextView
-        android:id="@+id/register_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="288dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Sign Up"
-        android:textColor="@color/blue"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/register_image" />
-
     <LinearLayout
         android:id="@+id/layout_register"
         android:layout_width="413dp"
         android:layout_height="368dp"
-        android:layout_marginStart="16dp"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.944"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/register_text">
 
         <EditText
             android:id="@+id/email_input"
-            android:layout_width="320dp"
-            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:background="@drawable/layout_input"
-            android:fontFamily="@font/roboto_medium"
-            android:hint=" Masukkan email"
-            android:textSize="15dp" />
+            android:fontFamily="@font/poppins_regular"
+            android:hint=" Masukkan Email"
+            android:padding="12dp"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/name_input"
-            android:layout_width="320dp"
-            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:background="@drawable/layout_input"
-            android:fontFamily="@font/roboto_medium"
-            android:hint=" Buat nama pengguna"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Buat nama pengguna"
             android:inputType="textPassword"
-            android:textSize="16dp" />
+            android:padding="12dp"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/password_input"
-            android:layout_width="320dp"
-            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:background="@drawable/layout_input"
-            android:fontFamily="@font/roboto_medium"
+            android:fontFamily="@font/poppins_regular"
             android:hint=" Buat kata sandi"
             android:inputType="textPassword"
-            android:textSize="16dp" />
+            android:padding="12dp"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/login_button"
             android:layout_width="315dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/blue"
-            android:fontFamily="@font/roboto_regular"
+            android:fontFamily="@font/roboto_bold"
             android:text="Continue" />
 
         <LinearLayout
@@ -102,19 +90,32 @@
 
             <Button
                 android:id="@+id/to_register_button"
-                android:layout_width="120dp"
-                android:layout_height="38dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
-                android:fontFamily="@font/roboto_regular"
+                android:fontFamily="@font/poppins_regular"
                 android:paddingLeft="1dp"
                 android:text="Login"
                 android:textAllCaps="false"
                 android:textColor="@color/blue"
-                android:textSize="14dp" />
+                android:textSize="12dp" />
 
 
         </LinearLayout>
 
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Sign Up"
+        android:textColor="@color/blue"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_image" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
