@@ -4,34 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity">
 
     <ImageView
-        android:id="@+id/login_image"
+        android:id="@+id/register_image"
         android:layout_width="295dp"
         android:layout_height="290dp"
         android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iv_login_page" />
+        app:srcCompat="@drawable/iv_register_page" />
 
     <TextView
-        android:id="@+id/login_text"
+        android:id="@+id/register_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="288dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Login"
+        android:text="Sign Up"
         android:textColor="@color/blue"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/login_image" />
+        app:layout_constraintTop_toTopOf="@+id/register_image" />
 
     <LinearLayout
-        android:id="@+id/layout_login"
+        android:id="@+id/layout_register"
         android:layout_width="413dp"
         android:layout_height="368dp"
         android:layout_marginStart="16dp"
@@ -40,10 +40,10 @@
         android:padding="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.955">
+        app:layout_constraintVertical_bias="1.0">
 
         <EditText
             android:id="@+id/email_input"
@@ -52,32 +52,30 @@
             android:layout_margin="8dp"
             android:background="@drawable/layout_input"
             android:fontFamily="@font/roboto_medium"
-            android:hint="  Masukkan email atau nama pengguna"
+            android:hint=" Masukkan email"
             android:textSize="15dp" />
 
         <EditText
-            android:id="@+id/password_input"
+            android:id="@+id/name_input"
             android:layout_width="320dp"
-            android:inputType="textPassword"
             android:layout_height="48dp"
             android:layout_margin="8dp"
             android:background="@drawable/layout_input"
             android:fontFamily="@font/roboto_medium"
-            android:hint=" Masukkan kata sandi"
+            android:hint=" Buat nama pengguna"
+            android:inputType="textPassword"
             android:textSize="16dp" />
 
-        <Button
-            android:id="@+id/lupa_password"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_gravity="right"
-            android:background="@android:color/transparent"
-            android:backgroundTint="@android:color/transparent"
-            android:fontFamily="@font/roboto_regular"
-            android:text="Lupa kata Sandi?"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="12dp" />
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/layout_input"
+            android:fontFamily="@font/roboto_medium"
+            android:hint=" Buat kata sandi"
+            android:inputType="textPassword"
+            android:textSize="16dp" />
 
         <Button
             android:id="@+id/login_button"
@@ -86,7 +84,7 @@
             android:layout_gravity="center"
             android:backgroundTint="@color/blue"
             android:fontFamily="@font/roboto_regular"
-            android:text="Login" />
+            android:text="Continue" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -99,7 +97,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_medium"
-                android:text="New to logistic ?"
+                android:text="Sudah punya akun?"
                 android:textSize="12dp" />
 
             <Button
@@ -109,7 +107,7 @@
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/roboto_regular"
                 android:paddingLeft="1dp"
-                android:text="Register"
+                android:text="Login"
                 android:textAllCaps="false"
                 android:textColor="@color/blue"
                 android:textSize="14dp" />
@@ -119,6 +117,4 @@
 
 
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
