@@ -107,7 +107,7 @@
                 android:text="Register"
                 android:textAllCaps="false"
                 android:textColor="@color/blue"
-                android:textSize="14dp" />
+                android:textSize="12dp" />
 
 
         </LinearLayout>
