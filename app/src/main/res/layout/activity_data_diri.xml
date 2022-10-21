@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Data_Diri_Activity">
+
+    <TextView
+        android:id="@+id/nama_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Nama"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/nama_data_diri"
+        android:layout_width="256dp"
+        android:layout_height="24dp"
+        android:background="@color/white_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama_judul" />
+
+    <TextView
+        android:id="@+id/tahunlulus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Tahun lulus"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama_data_diri" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup_tahun_lulus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tahunlulus">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_2019"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="2019"
+            app:chipCornerRadius="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_2020"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020"
+            app:chipCornerRadius="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_2021"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2021"
+            app:chipCornerRadius="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_2022"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022"
+            app:chipCornerRadius="2dp" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/jurusan_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Jurusan"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup_tahun_lulus" />
+;
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup_jurusan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jurusan_judul">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_rpl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="RPL"
+            app:chipCornerRadius="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MM"
+            app:chipCornerRadius="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_tkj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TKJ"
+            app:chipCornerRadius="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_ps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS"
+            app:chipCornerRadius="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_cg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CG"
+            app:chipCornerRadius="2dp" />
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/status_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Status"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup_jurusan" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/status_judul">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_bekerja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Bekerja"
+            app:chipCornerRadius="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_kuliah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Kuliah"
+            app:chipCornerRadius="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_wirausaha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Wirausaha"
+            app:chipCornerRadius="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_tuna_karya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Tuna Karya"
+            app:chipCornerRadius="2dp" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/jenis_kelamin_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Jenis Kelamin"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup_status" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jenis_kelamin_judul">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_laki_laki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Laki laki"
+            app:chipCornerRadius="2dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_perempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Perempuan"
+            app:chipCornerRadius="2dp" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/nama_kantor_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Nama Kantor(jika bekerja)"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup2" />
+
+    <EditText
+        android:id="@+id/input_nama_kantor"
+        android:layout_width="256dp"
+        android:layout_height="24dp"
+        android:background="@color/white_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama_kantor_judul" />
+
+    <TextView
+        android:id="@+id/alamat_kantor_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Alamat Kantor"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_nama_kantor" />
+
+    <EditText
+        android:id="@+id/input_alamat_kantor"
+        android:layout_width="256dp"
+        android:layout_height="24dp"
+        android:background="@color/white_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alamat_kantor_judul" />
+
+    <TextView
+        android:id="@+id/nama_kampus_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Nama Kampus(jika kuliah)"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_alamat_kantor" />
+
+    <EditText
+        android:id="@+id/input_nama_kampus"
+        android:layout_width="256dp"
+        android:layout_height="24dp"
+        android:background="@color/white_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama_kampus_judul" />
+
+    <TextView
+        android:id="@+id/nama_usaha_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Nama Usaha(jika wirausaha)"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_nama_kampus" />
+
+    <EditText
+        android:id="@+id/input_nama_usaha"
+        android:layout_width="256dp"
+        android:layout_height="24dp"
+        android:background="@color/white_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama_usaha_judul" />
+
+    <TextView
+        android:id="@+id/alamat_usaha_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Alamat Usaha"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_nama_usaha" />
+
+    <EditText
+        android:id="@+id/input_alamat_usaha"
+        android:layout_width="256dp"
+        android:layout_height="24dp"
+        android:background="@color/white_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alamat_usaha_judul" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
