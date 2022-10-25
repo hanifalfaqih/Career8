@@ -1,9 +1,10 @@
-package id.allana.career8
+package id.allana.career8.authentication
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import id.allana.career8.R
 
 class RegisterActivity : AppCompatActivity() {
 

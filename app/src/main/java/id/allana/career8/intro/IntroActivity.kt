@@ -1,4 +1,4 @@
-package id.allana.career8.onboarding
+package id.allana.career8.intro
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.github.appintro.AppIntro2
 import com.github.appintro.AppIntroCustomLayoutFragment
-import id.allana.career8.LoginActivity
+import id.allana.career8.authentication.LoginActivity
 import id.allana.career8.R
 
 class IntroActivity: AppIntro2() {
