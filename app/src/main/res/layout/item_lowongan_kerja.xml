@@ -44,7 +44,7 @@
                     tools:text="25 Oktober 2022"
                     android:fontFamily="@font/poppins_medium"
                     android:layout_marginStart="4dp"
-
+                    android:textColor="@color/text_black"
                     />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -68,7 +68,9 @@
                     android:layout_height="wrap_content"
                     tools:text="Mobile Android Developer"
                     android:layout_marginStart="4dp"
-                    android:fontFamily="@font/poppins_medium"/>
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/text_black"
+                    />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -92,6 +94,8 @@
                     tools:text="Kotlin, MVVM, Clean Architecture"
                     android:fontFamily="@font/poppins_medium"
                     android:layout_marginStart="4dp"
+                    android:textColor="@color/text_black"
+
                     />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -116,6 +120,8 @@
                     tools:text="WFO / Hybrid"
                     android:fontFamily="@font/poppins_medium"
                     android:layout_marginStart="4dp"
+                    android:textColor="@color/text_black"
+
                     />
 
             </androidx.appcompat.widget.LinearLayoutCompat>

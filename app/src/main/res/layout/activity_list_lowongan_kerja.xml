@@ -60,4 +60,30 @@
         app:layout_constraintTop_toTopOf="@+id/text_greeting"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_empty_lowongan"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_lowongan_empty"
+            android:fontFamily="@font/poppins_bold"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:visibility="invisible"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
