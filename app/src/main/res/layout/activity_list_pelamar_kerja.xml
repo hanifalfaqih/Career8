@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListPelamarKerjaActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_text_greeting"
+        android:fontFamily="@font/poppins_bold"
+        android:padding="8dp"
+        android:text="Ada lowongan apa hari ini?"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_lowongan_kerja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_greeting"
+        tools:listitem="@layout/item_pelamar_kerja" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_profile"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_account_box"
+        app:layout_constraintBottom_toBottomOf="@+id/text_greeting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_greeting"
+        app:layout_constraintTop_toTopOf="@+id/text_greeting"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="307dp"
+        android:layout_height="443dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_empty_pelamar"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hmm.. belum ada yang ngisi nih"
+            android:fontFamily="@font/poppins_bold"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:visibility="invisible"/>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,14 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/rafha/Career8/app/src/main/res/drawable/bg_text_greeting.xml" value="0.1785" />
         <entry key="..\:/rafha/Career8/app/src/main/res/drawable/button_submit.xml" value="0.1785" />
         <entry key="..\:/rafha/Career8/app/src/main/res/drawable/gradient_background.xml" value="0.1785" />
         <entry key="..\:/rafha/Career8/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1785" />
         <entry key="..\:/rafha/Career8/app/src/main/res/drawable/layout_email.xml" value="0.1785" />
+        <entry key="..\:/rafha/Career8/app/src/main/res/drawable/layout_input.xml" value="0.1785" />
         <entry key="..\:/rafha/Career8/app/src/main/res/layout/activity_continue.xml" value="0.12952898550724637" />
         <entry key="..\:/rafha/Career8/app/src/main/res/layout/activity_intro.xml" value="0.1796875" />
+        <entry key="..\:/rafha/Career8/app/src/main/res/layout/activity_item_lowongan_kerja.xml" value="0.12952898550724637" />
+        <entry key="..\:/rafha/Career8/app/src/main/res/layout/activity_list_lowongan_kerja.xml" value="0.22" />
+        <entry key="..\:/rafha/Career8/app/src/main/res/layout/activity_list_pelamar_kerja.xml" value="0.12952898550724637" />
         <entry key="..\:/rafha/Career8/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
         <entry key="..\:/rafha/Career8/app/src/main/res/layout/activity_register.xml" value="0.16666666666666666" />
+        <entry key="..\:/rafha/Career8/app/src/main/res/layout/item_lowongan_kerja.xml" value="0.14666666666666667" />
+        <entry key="..\:/rafha/Career8/app/src/main/res/layout/item_pelamar_kerja.xml" value="0.3333333333333333" />
         <entry key="..\:/rafha/Career8/app/src/main/res/layout/layout_onboarding_1.xml" value="0.22" />
         <entry key="..\:/rafha/Career8/app/src/main/res/layout/layout_onboarding_2.xml" value="0.1796875" />
         <entry key="..\:/rafha/Career8/app/src/main/res/layout/layout_onboarding_3.xml" value="0.1796875" />
