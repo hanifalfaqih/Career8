@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
     <com.google.android.material.card.MaterialCardView
@@ -12,8 +12,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        app:cardCornerRadius="15dp"
         app:cardBackgroundColor="@color/bg_card_view"
+        app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -34,67 +34,65 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tanggal : "
-                    android:fontFamily="@font/poppins_medium"/>
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Tanggal : " />
 
                 <TextView
                     android:id="@+id/tv_tanggal_lowongan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:text="25 Oktober 2022"
-                    android:fontFamily="@font/poppins_medium"
                     android:layout_marginStart="4dp"
+                    android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/text_black"
-                    />
+                    tools:text="25 Oktober 2022" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginTop="8dp"
+                android:orientation="horizontal"
                 android:weightSum="2">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Judul Pekerjaan : "
-                    android:fontFamily="@font/poppins_medium"/>
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Judul Pekerjaan : " />
 
                 <TextView
                     android:id="@+id/tv_judul_lowongan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:text="Mobile Android Developer"
                     android:layout_marginStart="4dp"
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/text_black"
-                    />
+                    tools:text="Mobile Android Developer" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginTop="8dp"
+                android:orientation="horizontal"
                 android:weightSum="2">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kemampuan Kerja : "
-                    android:fontFamily="@font/poppins_medium"/>
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Kemampuan Kerja : " />
 
                 <TextView
                     android:id="@+id/tv_kemampuan_kerja_lowongan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:text="Kotlin, MVVM, Clean Architecture"
-                    android:fontFamily="@font/poppins_medium"
                     android:layout_marginStart="4dp"
+                    android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/text_black"
+                    tools:text="Kotlin, MVVM, Clean Architecture"
 
                     />
 
@@ -103,24 +101,24 @@
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginTop="8dp"
+                android:orientation="horizontal"
                 android:weightSum="2">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Jenis Kerja : "
-                    android:fontFamily="@font/poppins_medium"/>
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Jenis Kerja : " />
 
                 <TextView
                     android:id="@+id/tv_jenis_pekerjaan_lowongan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:text="WFO / Hybrid"
-                    android:fontFamily="@font/poppins_medium"
                     android:layout_marginStart="4dp"
+                    android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/text_black"
+                    tools:text="WFO / Hybrid"
 
                     />
 

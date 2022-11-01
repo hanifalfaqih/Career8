@@ -5,4 +5,6 @@
     <string name="text_welcome_to">WELCOME <font color="#FF672C">TO</font></string>
     <string name="text_continue">Sebelum lanjut \nisi data diri dulu ya</string>
     <string name="text_lowongan_empty">Wah kayaknya masih kosong nih...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

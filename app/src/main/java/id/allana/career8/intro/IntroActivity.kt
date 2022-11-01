@@ -24,6 +24,7 @@ class IntroActivity: AppIntro2() {
         addSlide(AppIntroCustomLayoutFragment.newInstance(R.layout.layout_onboarding_1))
         addSlide(AppIntroCustomLayoutFragment.newInstance(R.layout.layout_onboarding_2))
         addSlide(AppIntroCustomLayoutFragment.newInstance(R.layout.layout_onboarding_3))
+        addSlide(AppIntroCustomLayoutFragment.newInstance(R.layout.layout_onboarding_4))
 
 
     }

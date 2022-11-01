@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_lowongan_kerja">
+
+    <fragment
+        android:id="@+id/navigation_lowongan_kerja"
+        android:name="id.allana.career8.home.ListLowonganKerjaFragment"
+        android:label="Pelamar Kerja"
+        tools:layout="@layout/fragment_list_lowongan_kerja" />
+    <fragment
+        android:id="@+id/navigation_alumni"
+        android:name="id.allana.career8.home.ListAlumniFragment"
+        android:label="Alumni"
+        tools:layout="@layout/fragment_list_alumni" />
+    <fragment
+        android:id="@+id/navigation_pelamar_kerja"
+        android:name="id.allana.career8.home.ListPelamarKerjaFragment"
+        android:label="Pelamar Kerja"
+        tools:layout="@layout/fragment_list_pelamar_kerja"/>
+</navigation>

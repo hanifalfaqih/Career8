@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_lowongan_kerja"
+        android:icon="@drawable/ic_outline_view_list"
+        android:title="Lowongan Kerja" />
+
+    <item
+        android:id="@+id/navigation_alumni"
+        android:icon="@drawable/ic_baseline_work"
+        android:title="Alumni" />
+
+    <item
+        android:id="@+id/navigation_pelamar_kerja"
+        android:icon="@drawable/ic_baseline_add"
+        android:title="Pelamar Kerja" />
+
+
+</menu>
