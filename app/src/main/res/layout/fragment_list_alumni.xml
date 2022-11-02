@@ -1,14 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".home.ListAlumniFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/judul_list_alumni"
+        android:layout_width="124dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="LIST ALUMNI"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/searchView"
+        app:layout_constraintEnd_toStartOf="@+id/btn_profile"
+        app:layout_constraintStart_toEndOf="@+id/searchView"
+        app:layout_constraintTop_toTopOf="@+id/searchView" />
 
-</FrameLayout>
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_profile"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_account_box"
+        app:layout_constraintBottom_toBottomOf="@+id/judul_list_alumni"
+        app:layout_constraintEnd_toEndOf="@id/btn_filter"
+        app:layout_constraintTop_toTopOf="@+id/judul_list_alumni"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_filter"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_filter_list"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_profile"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul_list_alumni">
+
+        <TextView
+            android:id="@+id/nama_list_alumni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="center"
+            android:textColor="@color/text_black"
+            tools:text="NAMA" />
+
+        <TextView
+            android:id="@+id/nis_list_alumni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="center"
+            android:textColor="@color/text_black"
+            tools:text="NIS" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_lowongan_kerja"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/item_list_alumni" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
