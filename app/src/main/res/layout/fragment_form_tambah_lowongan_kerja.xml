@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.dudi.FormTambahLowonganKerjaFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_text_greeting"
+        android:fontFamily="@font/poppins_bold"
+        android:padding="8dp"
+        android:text="Tambahkan Lowongan Pekerjaan"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_judul_pekerjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Nama Pekerjaan"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/text_black"
+        app:layout_constraintBottom_toTopOf="@+id/et_judul_pekerjaan"
+        app:layout_constraintStart_toStartOf="@+id/et_judul_pekerjaan" />
+
+
+    <EditText
+        android:id="@+id/et_judul_pekerjaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/layout_input"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Contoh: Android Developer"
+        android:padding="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_greeting" />
+
+    <TextView
+        android:id="@+id/tv_kemampuan_kerja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Kemampuan Kerja"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/text_black"
+        app:layout_constraintBottom_toTopOf="@+id/et_kemampuan_kerja"
+        app:layout_constraintStart_toStartOf="@+id/et_kemampuan_kerja" />
+
+    <EditText
+        android:id="@+id/et_kemampuan_kerja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/layout_input"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Contoh: Kotlin, MVVM, Clean Architecture"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_judul_pekerjaan" />
+
+    <TextView
+        android:id="@+id/tv_jenis_pekerjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Kemampuan Kerja"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/text_black"
+        app:layout_constraintBottom_toTopOf="@+id/et_jenis_pekerjaan"
+        app:layout_constraintStart_toStartOf="@+id/et_jenis_pekerjaan" />
+
+    <EditText
+        android:id="@+id/et_jenis_pekerjaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/layout_input"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Contoh: Fulltime, Partime, Internship"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_kemampuan_kerja" />
+
+    <TextView
+        android:id="@+id/tv_deskripsi_pekerjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Kemampuan Kerja"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/text_black"
+        app:layout_constraintBottom_toTopOf="@+id/et_deskripsi_pekerjaan"
+        app:layout_constraintStart_toStartOf="@+id/et_deskripsi_pekerjaan" />
+
+    <EditText
+        android:id="@+id/et_deskripsi_pekerjaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/layout_input"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Deskripsi lowongan kerja"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_jenis_pekerjaan" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/pb_tambah_lowongan_kerja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:progressTint="@color/blue2"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_deskripsi_pekerjaan" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pb_tambah_lowongan_kerja" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

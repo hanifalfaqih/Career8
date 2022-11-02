@@ -13,7 +13,7 @@
 
     <item
         android:id="@+id/navigation_pelamar_kerja"
-        android:icon="@drawable/ic_baseline_add"
+        android:icon="@drawable/ic_baseline_attach_email"
         android:title="Pelamar Kerja" />
 
 
