@@ -1,76 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="wrap_content">
-
-<LinearLayout
-    android:id="@+id/ll_text_greeting"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:weightSum="3"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent">
+    android:layout_height="match_parent">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_greeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:layout_weight="1.75"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/bg_text_greeting"
         android:fontFamily="@font/poppins_bold"
         android:padding="8dp"
         android:text="Ada lowongan apa hari ini?"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/btn_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1.25"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="@color/white"
+        android:layout_gravity="center_vertical|end"
         android:src="@drawable/ic_baseline_account_box"
+        app:layout_constraintBottom_toBottomOf="@+id/text_greeting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_greeting"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-</LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_profile">
 
-<androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/rv_list_lowongan_kerja"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="48dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/ll_text_greeting"
-    tools:listitem="@layout/item_lowongan_kerja" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_lowongan_kerja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/item_lowongan_kerja" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-<com.google.android.material.floatingactionbutton.FloatingActionButton
-    android:id="@+id/fab_add_lowongan"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginEnd="16dp"
-    android:layout_marginBottom="16dp"
-    android:src="@drawable/ic_baseline_add"
-    app:backgroundTint="@color/blue2"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="1.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:maxImageSize="36dp"
-    app:tint="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
 
