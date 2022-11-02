@@ -1,4 +1,4 @@
-package id.allana.career8.home
+package id.allana.career8.lowongankerja
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
