@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".home.dudi.FormTambahLowonganKerjaFragment">
+    tools:context=".home.dudi.add.FormTambahLowonganKerjaFragment">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_greeting"
@@ -141,7 +141,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:progressTint="@color/blue2"
+        android:progressTint="@color/blue"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

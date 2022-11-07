@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_list_lowongan_kerja" />
     <fragment
         android:id="@+id/navigation_alumni"
-        android:name="id.allana.career8.home.ListAlumniFragment"
+        android:name="id.allana.career8.home.dudi.ListAlumniFragment"
         android:label="Alumni"
         tools:layout="@layout/fragment_list_alumni" />
     <fragment

@@ -53,6 +53,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tahunlulus">
@@ -61,7 +62,8 @@
                 android:id="@+id/chip_2019"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:checkable="true"
                 android:text="2019"
                 app:chipCornerRadius="2dp" />
 
@@ -69,6 +71,7 @@
                 android:id="@+id/chip_2020"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checkable="true"
                 android:text="2020"
                 app:chipCornerRadius="2dp" />
 
@@ -76,6 +79,7 @@
                 android:id="@+id/chip_2021"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checkable="true"
                 android:text="2021"
                 app:chipCornerRadius="2dp" />
 
@@ -83,6 +87,7 @@
                 android:id="@+id/chip_2022"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checkable="true"
                 android:text="2022"
                 app:chipCornerRadius="2dp" />
 
@@ -100,13 +105,15 @@
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chipGroup_tahun_lulus" />
-        ;
+
         <com.google.android.material.chip.ChipGroup
             android:id="@+id/chipGroup_jurusan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/jurusan_judul">
 
@@ -116,35 +123,40 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:text="RPL"
-                app:chipCornerRadius="2dp" />
+                app:chipCornerRadius="2dp"
+                android:checkable="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_mm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="MM"
-                app:chipCornerRadius="2dp" />
+                app:chipCornerRadius="2dp"
+                android:checkable="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_tkj"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TKJ"
-                app:chipCornerRadius="2dp" />
+                app:chipCornerRadius="2dp"
+                android:checkable="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_ps"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PS"
-                app:chipCornerRadius="2dp" />
+                app:chipCornerRadius="2dp"
+                android:checkable="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_cg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CG"
-                app:chipCornerRadius="2dp" />
+                app:chipCornerRadius="2dp"
+                android:checkable="true"/>
 
 
         </com.google.android.material.chip.ChipGroup>
@@ -166,8 +178,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/status_judul">
 
@@ -177,7 +190,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:text="Bekerja"
-                app:chipCornerRadius="2dp" />
+                app:chipCornerRadius="2dp"
+                android:checkable="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_kuliah"
@@ -185,7 +199,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:text="Kuliah"
-                app:chipCornerRadius="2dp" />
+                app:chipCornerRadius="2dp"
+                android:checkable="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_wirausaha"
@@ -193,7 +208,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:text="Wirausaha"
-                app:chipCornerRadius="2dp" />
+                app:chipCornerRadius="2dp"
+                android:checkable="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_tuna_karya"
@@ -201,7 +217,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:text="Tuna Karya"
-                app:chipCornerRadius="2dp" />
+                app:chipCornerRadius="2dp"
+                android:checkable="true"/>
 
         </com.google.android.material.chip.ChipGroup>
 
@@ -222,8 +239,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/jenis_kelamin_judul">
 
@@ -233,7 +251,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:text="Laki laki"
-                app:chipCornerRadius="2dp" />
+                app:chipCornerRadius="2dp"
+                android:checkable="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_perempuan"
@@ -241,7 +260,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:text="Perempuan"
-                app:chipCornerRadius="2dp" />
+                app:chipCornerRadius="2dp"
+                android:checkable="true"/>
 
         </com.google.android.material.chip.ChipGroup>
 
@@ -381,6 +401,8 @@
             android:layout_marginTop="32dp"
             android:layout_marginBottom="16dp"
             android:text="Simpan"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/roboto_bold"
             app:layout_constraintTop_toBottomOf="@id/input_alamat_usaha"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>

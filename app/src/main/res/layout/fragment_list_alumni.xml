@@ -5,52 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/judul_list_alumni"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="LIST ALUMNI"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/searchView"
+        app:layout_constraintEnd_toStartOf="@+id/btn_filter"
+        app:layout_constraintStart_toEndOf="@+id/searchView"
+        app:layout_constraintTop_toTopOf="@+id/searchView" />
+
 
     <SearchView
         android:id="@+id/searchView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_search"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/judul_list_alumni"
-        android:layout_width="124dp"
-        android:layout_height="30dp"
-        android:gravity="center"
-        android:text="LIST ALUMNI"
-        android:textAlignment="center"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/searchView"
-        app:layout_constraintEnd_toStartOf="@+id/btn_profile"
-        app:layout_constraintStart_toEndOf="@+id/searchView"
-        app:layout_constraintTop_toTopOf="@+id/searchView" />
-
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/btn_profile"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="56dp"
-        android:backgroundTint="@color/white"
-        android:src="@drawable/ic_baseline_account_box"
-        app:layout_constraintBottom_toBottomOf="@+id/judul_list_alumni"
-        app:layout_constraintEnd_toEndOf="@id/btn_filter"
-        app:layout_constraintTop_toTopOf="@+id/judul_list_alumni"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/btn_filter"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/blue"
         android:src="@drawable/ic_baseline_filter_list"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_profile"
+        app:layout_constraintBottom_toBottomOf="@+id/searchView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_profile"
+        app:layout_constraintTop_toTopOf="@+id/searchView"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -63,7 +55,7 @@
         android:weightSum="5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/judul_list_alumni">
+        app:layout_constraintTop_toBottomOf="@id/searchView">
 
         <TextView
             android:id="@+id/nama_list_alumni"
