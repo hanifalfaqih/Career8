@@ -17,4 +17,7 @@
     <color name="bg_card_view">#F3F3F2</color>
     <color name="text_black">#282828</color>
 
+    <color name="text_gray_lowongan_kerja">#7C7474</color>
+    <color name="text_black_lowongan_kerja">#3D3939</color>
+
 </resources>
