@@ -62,7 +62,7 @@
                     tools:text="1 Desember 2022" />
 
                 <View
-                    android:id="@+id/line_divider"
+                    android:id="@+id/line_divider_header"
                     android:layout_width="0dp"
                     android:layout_height="2dp"
                     android:background="#D2D2D1"
@@ -78,7 +78,7 @@
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/text_gray_lowongan_kerja"
                     app:layout_constraintStart_toStartOf="@id/tv_judul_lowongan_kerja"
-                    app:layout_constraintTop_toBottomOf="@id/line_divider"
+                    app:layout_constraintTop_toBottomOf="@id/line_divider_header"
                     tools:text="Google Inc." />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
