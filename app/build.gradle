@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+
 }
 
 android {
@@ -83,4 +85,11 @@ dependencies {
     //chucker
     debugImplementation "com.github.chuckerteam.chucker:library:3.5.2"
     releaseImplementation "com.github.chuckerteam.chucker:library-no-op:3.5.2"
+
+    //room
+    implementation 'androidx.room:room-ktx:2.5.0-beta01'
+    kapt 'androidx.room:room-compiler:2.5.0-beta01'
+
+    //activity ktx
+    implementation 'androidx.activity:activity-ktx:1.6.1'
 }

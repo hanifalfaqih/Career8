@@ -16,5 +16,15 @@
         android:icon="@drawable/ic_baseline_attach_email"
         android:title="Pelamar Kerja" />
 
+    <item
+        android:id="@+id/navigation_lamaran_kerja"
+        android:icon="@drawable/ic_baseline_attach_email"
+        android:title="Lamaran Kerja"/>
+
+    <item
+        android:id="@+id/navigation_profil"
+        android:icon="@drawable/ic_baseline_person"
+        android:title="Profil" />
+
 
 </menu>

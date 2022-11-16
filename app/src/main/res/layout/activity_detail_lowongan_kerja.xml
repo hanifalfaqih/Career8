@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".home.DetailLowonganKerjaActivity">
+        tools:context=".ui.home.DetailLowonganKerjaActivity">
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btn_back"
@@ -228,8 +228,10 @@
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/ll_body"
-                app:layout_constraintTop_toTopOf="@+id/ll_body">
+                app:layout_constraintTop_toTopOf="@+id/ll_body"
+                app:layout_constraintVertical_bias="0.0">
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="wrap_content"

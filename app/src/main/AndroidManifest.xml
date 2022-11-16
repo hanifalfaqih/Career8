@@ -14,33 +14,25 @@
         android:theme="@style/Theme.Career8"
         tools:targetApi="31">
         <activity
-            android:name=".home.DetailLowonganKerjaActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:name=".ui.home.DetailLowonganKerjaActivity"
+            android:exported="false" />
         <activity
             android:name=".home.HomeActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".DataDiriActivity"
             android:exported="false" />
         <activity
-            android:name=".ResetPasswordActivity"
+            android:name=".ui.DataDiriActivity"
             android:exported="false" />
         <activity
-            android:name=".authentication.RegisterActivity"
+            android:name=".ui.ResetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".authentication.LoginActivity"
+            android:name=".ui.authentication.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".intro.StartingScreenActivity"
+            android:name=".ui.authentication.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.intro.StartingScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,7 +41,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".intro.IntroActivity"
+            android:name=".ui.intro.IntroActivity"
             android:exported="false" />
     </application>
 

@@ -1,106 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:background="@color/bg_card_view">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_pelamar_kerja"
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="15dp"
-        app:cardBackgroundColor="@color/bg_card_view"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginBottom="8dp">
 
-      <androidx.appcompat.widget.LinearLayoutCompat
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:orientation="vertical"
-          android:layout_margin="12dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:weightSum="4">
 
-          <androidx.appcompat.widget.LinearLayoutCompat
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="horizontal"
-              android:weightSum="2">
-              <TextView
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:text="Nama Pekerjaan : "
-                  android:fontFamily="@font/poppins_medium"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
 
-              <TextView
-                  android:id="@+id/tv_tanggal_pelamar"
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  tools:text="Mobile Android Developer"
-                  android:fontFamily="@font/poppins_medium"
-                  android:layout_marginStart="4dp"
-                  android:textColor="@color/text_black"/>
+                <TextView
+                    android:id="@+id/tv_judul_lowongan_kerja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/text_black_lowongan_kerja"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_tanggal_lowongan_kerja"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Android Developer" />
 
-          </androidx.appcompat.widget.LinearLayoutCompat>
+                <TextView
+                    android:id="@+id/tv_tanggal_lowongan_kerja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_gray_lowongan_kerja"
+                    android:textSize="12sp"
+                    app:layout_constraintBaseline_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_judul_lowongan_kerja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_judul_lowongan_kerja"
+                    tools:text="1 Desember 2022" />
 
-          <androidx.appcompat.widget.LinearLayoutCompat
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="horizontal"
-              android:weightSum="2">
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-              <TextView
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:text="Tahun : "
-                  android:fontFamily="@font/poppins_medium"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-              <TextView
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:fontFamily="@font/poppins_medium"
-                  tools:text="2022"
-                  android:layout_marginStart="4dp"
-                  android:textColor="@color/text_black"/>
+                <TextView
+                    android:id="@+id/nama_pelamar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Nama Pelamar"
+                    android:textColor="@color/text_gray_lowongan_kerja"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-          </androidx.appcompat.widget.LinearLayoutCompat>
+                <TextView
+                    android:id="@+id/tahun_lulus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Tahun Lulus"
+                    android:textColor="@color/text_gray_lowongan_kerja"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_tahun_lulus"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_tahun_lulus" />\
 
-          <androidx.appcompat.widget.LinearLayoutCompat
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="horizontal"
-              android:weightSum="2">
+                <TextView
+                    android:id="@+id/jurusan_pelamar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Jurusan"
+                    android:textColor="@color/text_gray_lowongan_kerja"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_jurusan_pelamar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_jurusan_pelamar" />
 
-              <TextView
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:text="Jurusan : "
-                  android:fontFamily="@font/poppins_medium"/>
+                <TextView
+                    android:id="@+id/tv_nama_pelamar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Maulana Hanif Al Faqih Rojichan"
+                    android:textColor="@color/text_gray_darker_detail_lowongan_kerja"
+                    app:layout_constraintBottom_toBottomOf="@+id/nama_pelamar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nama_pelamar"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-              <TextView
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  tools:text="RPL"
-                  android:fontFamily="@font/poppins_medium"
-                  android:layout_marginStart="4dp"
-                  android:textColor="@color/text_black"/>
+                <TextView
+                    android:id="@+id/tv_tahun_lulus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="2022"
+                    android:textColor="@color/text_gray_darker_detail_lowongan_kerja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_nama_pelamar"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_nama_pelamar" />
 
-          </androidx.appcompat.widget.LinearLayoutCompat>
+                <TextView
+                    android:id="@+id/tv_jurusan_pelamar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Pengembangan Perangkat Lunak dan Gim"
+                    android:textColor="@color/text_gray_darker_detail_lowongan_kerja"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_tahun_lulus"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_tahun_lulus" />
 
-      </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#BCBCBC"
+                app:cornerRadius="4dp"
+                app:icon="@drawable/ic_baseline_attach_file"
+                app:iconTint="#515151"
+                android:text="File CV"
+                android:textColor="#343031"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Download CV Pelamar"
-        app:layout_constraintStart_toStartOf="@id/cv_pelamar_kerja"
-        app:layout_constraintTop_toBottomOf="@id/cv_pelamar_kerja" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
+    </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".authentication.LoginActivity">
+    tools:context=".ui.authentication.LoginActivity">
 
     <ImageView
         android:id="@+id/login_image"
@@ -74,7 +74,7 @@
             android:textSize="12sp" />
 
         <Button
-            android:id="@+id/login_button"
+            android:id="@+id/btn_user_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

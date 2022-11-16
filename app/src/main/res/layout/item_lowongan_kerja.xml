@@ -157,7 +157,7 @@
                 android:background="#D2D2D1" />
 
             <TextView
-                android:id="@+id/login_button"
+                android:id="@+id/detail_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

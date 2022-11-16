@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".home.dudi.add.FormTambahLowonganKerjaFragment">
+    tools:context=".ui.home.dudi.add.FormTambahLowonganKerjaFragment">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_greeting"
@@ -148,7 +148,7 @@
         app:layout_constraintTop_toBottomOf="@id/et_deskripsi_pekerjaan" />
 
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/btn_upload_lowongan_kerja"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
