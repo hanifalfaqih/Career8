@@ -12,22 +12,22 @@
         tools:layout="@layout/fragment_list_lowongan_kerja" />
     <fragment
         android:id="@+id/navigation_alumni"
-        android:name="id.allana.career8.ui.home.dudi.ListAlumniFragment"
+        android:name="id.allana.career8.home.dudi.ListAlumniFragment"
         android:label="Alumni"
         tools:layout="@layout/fragment_list_alumni" />
     <fragment
         android:id="@+id/navigation_pelamar_kerja"
-        android:name="id.allana.career8.ui.home.dudi.ListPelamarKerjaFragment"
+        android:name="id.allana.career8.home.dudi.ListPelamarKerjaFragment"
         android:label="Pelamar Kerja"
         tools:layout="@layout/fragment_list_pelamar_kerja"/>
     <fragment
         android:id="@+id/navigation_lamaran_kerja"
-        android:name="id.allana.career8.ui.home.alumni.ListLamaranKerjaFragment"
+        android:name="id.allana.career8.home.alumni.ListLamaranKerjaFragment"
         android:label="fragment_list_lamaran_kerja"
         tools:layout="@layout/fragment_list_lamaran_kerja" />
     <fragment
         android:id="@+id/navigation_profile_alumni"
-        android:name="id.allana.career8.ui.home.alumni.ProfileAlumniFragment"
+        android:name="id.allana.career8.home.alumni.ProfileAlumniFragment"
         android:label="fragment_profile_alumni"
         tools:layout="@layout/fragment_profile_alumni" />
 
