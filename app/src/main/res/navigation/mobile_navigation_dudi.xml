@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_lowongan_kerja_dudi">
+
+    <fragment
+        android:id="@+id/navigation_lowongan_kerja_dudi"
+        android:name="id.allana.career8.ui.home.dudi.ListLowonganKerjaDudiFragment"
+        android:label="Pelamar Kerja"
+        tools:layout="@layout/fragment_list_lowongan_kerja_alumni" />
+    <fragment
+        android:id="@+id/navigation_alumni"
+        android:name="id.allana.career8.ui.home.dudi.ListAlumniFragment"
+        android:label="Alumni"
+        tools:layout="@layout/fragment_list_alumni" />
+    <fragment
+        android:id="@+id/navigation_pelamar_kerja"
+        android:name="id.allana.career8.ui.home.dudi.ListPelamarKerjaFragment"
+        android:label="Pelamar Kerja"
+        tools:layout="@layout/fragment_list_pelamar_kerja"/>
+
+</navigation>

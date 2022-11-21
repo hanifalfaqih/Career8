@@ -55,8 +55,6 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     //json parser library
     implementation 'com.google.code.gson:gson:2.9.0'
-    //coil image loader
-    implementation 'io.coil-kt:coil:1.4.0'
     //view model and lifecycle stuffs
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
@@ -65,9 +63,6 @@ dependencies {
     //hilt
     implementation("com.google.dagger:hilt-android:2.44")
     annotationProcessor "com.google.dagger:hilt-android-compiler:2.44"
-
-    debugImplementation "com.github.chuckerteam.chucker:library:3.5.2"
-    releaseImplementation "com.github.chuckerteam.chucker:library-no-op:3.5.2"
 
     //app intro
     implementation 'com.github.AppIntro:AppIntro:6.2.0'

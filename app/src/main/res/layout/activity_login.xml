@@ -74,7 +74,7 @@
             android:textSize="12sp" />
 
         <Button
-            android:id="@+id/btn_user_login"
+            android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -96,7 +96,7 @@
                 android:textSize="12sp" />
 
             <Button
-                android:id="@+id/to_register_button"
+                android:id="@+id/btn_to_register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
